@@ -48,7 +48,7 @@ I kept the app small and used plain HTML, CSS and JavaScript. You can click thro
 Requires [Node.js](https://nodejs.org/) 18 or later, only to run the tiny local server. There are no dependencies to install.
 
 ```bash
-git clone <this-repo-url> lead-desk-crm-demo
+git clone https://github.com/xschaudhry/lead-desk-crm-demo.git
 cd lead-desk-crm-demo
 npm start
 ```

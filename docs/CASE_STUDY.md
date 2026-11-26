@@ -186,6 +186,6 @@ I haven't tested this with customers, so I don't have business results to claim.
 
 ---
 
-**Links:** [Live demo](#) (add after deploy) · [Source code](../README.md) · [Functional requirements](FRD.md)
+**Links:** [Live demo](#) (add after deploy) · [Source code](https://github.com/xschaudhry/lead-desk-crm-demo) · [Functional requirements](FRD.md)
 
 *All names, phone numbers, emails and businesses shown are fictional. Screenshots are from the demo's sample data.*
