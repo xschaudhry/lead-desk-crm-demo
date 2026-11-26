@@ -14,7 +14,7 @@ HVAC businesses lose jobs in the gap between the first inquiry and the estimate 
 - **The pipeline is visible at a glance.** A stage strip counts every lead in each of six stages and doubles as a filter.
 - **Follow-up has a place to happen.** Each lead carries a next action and due date, and suggests a follow-up email from its stage, which you can record as a simulated send.
 
-It is a small, original app with no framework and no backend. It is meant to be read, not just clicked.
+It is a small, original app with no framework and no backend. It is meant to be read, not just clicked. For the problem, the design decisions and what I learned, see the [case study](docs/CASE_STUDY.md).
 
 ## Features
 
