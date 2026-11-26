@@ -4,7 +4,7 @@
 
 ## Quick facts
 
-- **Role:** Product design, requirements and front-end development (solo), built with Claude Code as an AI pair programmer
+- **Role:** Product design, requirements and front-end development (solo), built with AI coding assistance
 - **Context:** Independent portfolio project. It is not client work and is not affiliated with any HVAC business.
 - **Timeline:** Five milestones, from a written spec to a deploy-ready build
 - **Stack:** Plain HTML, CSS and JavaScript; no framework, no build step, no runtime dependencies
