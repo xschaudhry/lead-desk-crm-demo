@@ -2,6 +2,7 @@
   "name": "lead-desk-crm-demo",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Lead Desk: an HVAC lead-to-estimate CRM portfolio demo with fictional, browser-local data.",
   "scripts": {
     "start": "node scripts/serve.js"
