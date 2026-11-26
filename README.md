@@ -151,4 +151,6 @@ This is a personal portfolio project, so it isn't seeking contributions. Feedbac
 
 ## License
 
-No license has been chosen yet. Until one is added, all rights are reserved. Credit: designed and built by Chaudhry Usman as an independent portfolio demonstration; not affiliated with any HVAC business.
+Lead Desk is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.
+
+Designed and built by Chaudhry Usman as an independent portfolio demonstration; not affiliated with any HVAC business.
