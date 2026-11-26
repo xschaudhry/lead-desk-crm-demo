@@ -1,0 +1,14 @@
+node_modules/
+.vercel/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Private planning notes and locally installed skills: kept on disk, not in the repo
+PROJECT_BRIEF.md
+skills-lock.json
+.claude/skills/
+.agents/

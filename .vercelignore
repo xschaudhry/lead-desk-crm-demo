@@ -1,0 +1,9 @@
+# Only the app itself is published. Keep planning notes, tooling and skills off the live site.
+.claude
+.agents
+PROJECT_BRIEF.md
+skills-lock.json
+scripts
+docs
+README.md
+package.json
