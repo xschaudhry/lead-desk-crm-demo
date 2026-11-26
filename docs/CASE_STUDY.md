@@ -4,7 +4,7 @@
 
 ## Quick facts
 
-- **Role:** Product design, requirements and front-end development (solo), built with AI coding assistance
+- **Role:** I led product design, requirements and front-end development, with AI coding assistance
 - **Context:** Independent portfolio project. It is not client work and is not affiliated with any HVAC business.
 - **Timeline:** Five milestones, from a written spec to a deploy-ready build
 - **Stack:** Plain HTML, CSS and JavaScript; no framework, no build step, no runtime dependencies
@@ -18,7 +18,7 @@
 
 ## Overview
 
-Service businesses that run ads for estimate bookings live or die on the minutes after an inquiry arrives. Lead Desk is a small CRM that shows what that step looks like when it's organized:
+I built Lead Desk around one practical question: after a heating or cooling inquiry comes in, can the person handling it quickly see what needs attention and what to do next?
 
 1. An inquiry comes in.
 2. Anyone without heat is at the top of the list.
@@ -27,21 +27,21 @@ Service businesses that run ads for estimate bookings live or die on the minutes
 
 The emails are simulated: they are recorded on the lead and never sent.
 
-I built it as the centerpiece of my automation portfolio. My existing demos each cover one piece: quoting, follow-up, calibration and a command center. Lead Desk ties those capabilities into one product a visitor can actually use.
+I wanted this to be more than a static mockup. The sample data lets someone try the full path from inquiry to estimate follow-up, while the labels make clear that it is a fictional demo.
 
 ## The problem
 
-An HVAC company running a "free estimate" ad campaign gets inquiries from a Facebook survey, a website form, phone calls, its Google Business Profile and referrals. Three things go wrong:
+For the demo, I pictured a small HVAC office getting estimate requests from a website form, phone calls, social media and referrals. I focused on three everyday problems:
 
 - **Urgency gets lost.** A family with no heat in November sits in the same list as someone asking about a thermostat upgrade.
 - **Follow-up depends on memory.** Nobody owns the next step, so leads quietly go cold between "contacted" and "estimate booked".
 - **No one can see the pipeline.** Without stage counts, the team can't tell whether inquiries are piling up at first contact or at booking.
 
-**Goal:** a demo that makes the inquiry → qualification → follow-up → booked-estimate workflow tangible for three kinds of visitor:
+**What I wanted to show:** the inquiry → qualification → follow-up → booked-estimate workflow, in a form that:
 
-- recruiters and hiring managers
-- implementation teams
-- HVAC business owners
+- is easy for a recruiter or hiring manager to try
+- gives an implementation team something concrete to review
+- feels familiar to someone who has handled service inquiries
 
 **Constraints I set before writing code:**
 
@@ -54,13 +54,13 @@ An HVAC company running a "free estimate" ad campaign gets inquiries from a Face
 
 ### Requirements early
 
-I started with a small read-only milestone to prove the layout and data model. Then I paused to write a [functional requirements document](FRD.md) before adding any editing: 61 numbered requirements across the screens, the lead-capture flow, email behavior, settings and accessibility, plus an acceptance checklist. It forced the questions a real project would raise:
+I first made a read-only version to settle the layout and data shape. Before adding editing, I wrote a [functional requirements document](FRD.md) with 61 numbered requirements and an acceptance checklist. Writing it down surfaced details I might otherwise have skipped:
 
 - What does "Estimate Booked" require? A visit date and time.
 - What happens to a lost lead? It must record a reason.
 - Does recording an email move a lead's stage? Only New moves to Contacted.
 
-The work ran in five reviewable milestones, each ending in a browser test:
+I worked through five milestones and checked each one in the browser:
 
 1. Read-only desk: landing page, sample data, filters, detail panel
 2. Editing: stages, notes, follow-ups, add lead, archive and restore
@@ -70,7 +70,7 @@ The work ran in five reviewable milestones, each ending in a browser test:
 
 ### Key decisions
 
-**Plain JavaScript instead of a framework.** The demo has six screens and one data object. A framework would have added a build step and a dependency tree without making the product better, and the whole app stays readable for a reviewer in one sitting. Every piece of user-entered text is escaped before it is rendered.
+**Plain JavaScript.** The demo has a handful of screens and one saved data object, so I kept it framework-free. That means no build step or runtime dependencies, and the files are easy to browse. User-entered text is escaped before it is shown on the page.
 
 **Urgency and lateness are different colors.** The palette comes from an HVAC gauge manifold:
 
@@ -78,7 +78,7 @@ The work ran in five reviewable milestones, each ending in a browser test:
 - **Blue** (the low-pressure side) marks actions.
 - **Amber** marks overdue follow-ups.
 
-Keeping "urgent" and "late" visually distinct means a red row always means "call now". Each state also has a text label, so color is never the only signal.
+I kept urgent and late visually distinct: a red row means a no-heat or no-cooling request, while amber means a follow-up is overdue. Both also have text labels, so color isn't doing all the work.
 
 **The stage strip is both a dashboard and a filter.** Instead of a separate chart, the six stages sit in one continuous strip, drawn like a run of ductwork, with a count in each section. Clicking a stage filters the table, so seeing a bottleneck and acting on it is the same click.
 
@@ -141,7 +141,7 @@ The suggested template follows the lead's state: an urgent callback for no heat,
 
 ## Results
 
-There are no customer results to report, because the demo hasn't met a customer. These are the things I can verify about the build:
+I haven't tested this with customers, so I don't have business results to claim. Here are the checks I can report about the build:
 
 | What | Result |
 |---|---|
@@ -161,15 +161,15 @@ There are no customer results to report, because the demo hasn't met a customer.
 
 ## Learnings
 
-**What worked**
+**What worked for me**
 
 - **Writing the FRD early.** Most of the interesting decisions were made in writing, before the code that needed them: the estimate date, the lost reason, gaps in email drafts, the fictional phone range. Building then became a matter of following the document.
-- **Small milestones with a browser test at the end of each.** Four of the five milestones caught a real bug before it shipped:
-  - the desk opening scrolled halfway down, carried over from the landing page
-  - a count that read "1 archived leads"
-  - an email template that would have said "a AC replacement"
-  - a sample email address mangled by an accented name
-  - a stray notification and leftover test data in the screenshots
+- **Small milestones with a browser check at the end.** Working in small steps helped me catch issues as I went:
+  - the desk opened halfway down the page after leaving the landing screen
+  - one archived lead was labeled "1 archived leads"
+  - an email template produced "a AC replacement"
+  - an accented name came out wrong in a sample email address
+  - a notification and test data showed up in screenshots
 - **Building the honesty into the product.** Because the fictional labels, phone-range validation and "Not sent" records are part of the app, the demo can't be mistaken for real results, even out of context.
 
 **What I'd do differently**

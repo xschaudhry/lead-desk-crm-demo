@@ -1,20 +1,20 @@
 # Lead Desk
 
-> A browser-only CRM demo for an HVAC service desk: capture an inquiry, qualify it, follow up, and move it to a booked estimate.
+> A small browser-only CRM demo for an HVAC service desk, built around the stretch between a new inquiry and an estimate visit.
 
 **Independent portfolio demonstration.** Every business, lead, name, phone number and email in Lead Desk is fictional. No email, text, call or ad is ever sent, and nothing you enter leaves your browser. The demo shows a workflow; it has not been used with real customers, and it reports no real results.
 
 ![Lead desk with fictional HVAC leads, a stage strip and an overdue follow-up](docs/screenshots/02-lead-desk.png)
 
-## Why Lead Desk?
+## Why I built it
 
-HVAC businesses lose jobs in the gap between the first inquiry and the estimate visit. Urgent "no heat" calls sit next to routine tune-ups, leads come from five channels, and follow-ups depend on someone remembering. Lead Desk shows what an organized version of that step looks like:
+I wanted to make a demo that feels like a real workday problem: a no-heat request arrives beside a routine tune-up, and someone still needs to know who to call next. Lead Desk is my take on keeping those inquiries and follow-ups in one place:
 
 - **Urgency comes first.** Leads without heat or cooling are marked in red and sorted to the top, followed by overdue follow-ups.
 - **The pipeline is visible at a glance.** A stage strip counts every lead in each of six stages and doubles as a filter.
 - **Follow-up has a place to happen.** Each lead carries a next action and due date, and suggests a follow-up email from its stage, which you can record as a simulated send.
 
-It is a small, original app with no framework and no backend. It is meant to be read, not just clicked. For the problem, the design decisions and what I learned, see the [case study](docs/CASE_STUDY.md).
+I kept the app small and used plain HTML, CSS and JavaScript. You can click through the workflow, or read the code without setting up a framework. I wrote more about the decisions and trade-offs in the [case study](docs/CASE_STUDY.md).
 
 ## Features
 
@@ -153,4 +153,4 @@ This is a personal portfolio project, so it isn't seeking contributions. Feedbac
 
 Lead Desk is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.
 
-Designed and built by Chaudhry Usman as an independent portfolio demonstration; not affiliated with any HVAC business.
+I designed and built Lead Desk as an independent portfolio project, with AI coding assistance. It is not affiliated with any HVAC business.
